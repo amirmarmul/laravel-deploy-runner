@@ -10,7 +10,7 @@ RUN apt-get update \
     && add-apt-repository -y ppa:ondrej/php \
     && apt-get update \
     && apt-get install -y php8.2-cli php8.2-dev \ 
-    && curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash - \
+    && curl -sL https://deb.nodesource.com/setup_18.x | bash - \
     && apt-get update \
     && apt-get install -y nodejs \
     && npm install -g npm \
