@@ -9,7 +9,7 @@ RUN apt-get update \
     && gem install kamal -v 1.0 \
     && add-apt-repository -y ppa:ondrej/php \
     && apt-get update \
-    && apt-get install -y php8.2-cli php8.2-dev \ 
+    && apt-get install -y php8.2-cli \ 
     && curl -sL https://deb.nodesource.com/setup_18.x | bash - \
     && apt-get update \
     && apt-get install -y nodejs \
