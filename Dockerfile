@@ -25,6 +25,7 @@ RUN apt-get update \
 
 WORKDIR /workdir
 
-RUN git config --global --add safe.directory /workdir
+RUN git config --global --add safe.directory /workdir \
+    && git config --global --add safe.directory /github/workspace
 
 ENTRYPOINT ["kamal"]
